@@ -1,65 +1,71 @@
 body {
-    background: linear-gradient( to bottom, pink, purple);
+    background: linear-gradient(to bottom, pink, purple);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
-
-.ipad {
-    position: absolute;
-    width: 900;
-    height: 700;
-    margin-top: 6%;
-    margin-left: 40%;
-    border-radius: 30px;
-    box-shadow: 10px 10px 10px;
-}
-
-p{
-    color: white;
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    top:50%;
-    left: 1%;
-    text-align: center;
-    transform: translateY(-50px)
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
-    text-align: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.ipad {
+    width: 30%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px;
+    object-fit: cover;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .circle {
-    position: absolute;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
-    top: 55%;
-    transform: translateY(-50%);
+    margin-bottom: 10px;
 }
 
 .left {
-    left: 15px;
+    margin-right: auto;
 }
 
 .right {
-    right: 15px;
+    margin-left: auto;
 }
 
-
 .left:hover {
-    background-color: rgba(255, 0, 0, 0.7); 
+    background-color: rgba(255, 0, 0, 0.7);
 }
 
 .right:hover {
-    background-color: rgba(0, 0, 255, 0.7); /
+    background-color: rgba(0, 0, 255, 0.7);
 }
 
-
 .ipad:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
